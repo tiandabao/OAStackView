@@ -23,6 +23,7 @@
           NSStringFromClass([self class]),
           NSStringFromClass([self.stackView class]),
           NSStringFromClass([self.stackView superclass]));
+
 }
 
 - (void)didReceiveMemoryWarning

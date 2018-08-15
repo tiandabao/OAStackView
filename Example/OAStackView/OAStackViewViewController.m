@@ -8,6 +8,7 @@
 
 #import "OAStackViewViewController.h"
 #import <OAStackView/OAStackView.h>
+#import "OAStackView+CustomSpace.h"
 
 @interface OAStackViewViewController ()
 @property (weak, nonatomic) OAStackView *stackView;
@@ -24,6 +25,16 @@
         NSStringFromClass([self class]),
         NSStringFromClass([self.stackView class]),
         NSStringFromClass([self.stackView superclass]));
+ 
+  [self.stackView setCustomSpacing:60 afterView:self.viewToRemove];
+  
+  NSLog(@"viewToRemove %@", self.viewToRemove);
+}
+
+- (void)viewDidAppear:(BOOL)animated
+{
+  [super viewDidAppear:animated];
+  [self.stackView setCustomSpacing:50 afterView:self.viewToRemove];
 }
 
 - (void)didReceiveMemoryWarning
@@ -53,7 +64,8 @@
 }
 
 - (IBAction)spacingTapped:(UIButton*)sender {
-  self.stackView.spacing = sender.tag;
+//  self.stackView.spacing = sender.tag;
+  [self.stackView setCustomSpacing:50 afterView:self.viewToRemove];
 }
 
 - (IBAction)hideAll:(UIButton*)sender {

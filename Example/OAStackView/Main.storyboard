@@ -1,9 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="16C67" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="7Nj-kl-fk1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="7Nj-kl-fk1">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
         <deployment version="2304" identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--OAStackView-->
@@ -20,14 +24,14 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aOB-5r-4uZ" userLabel="Background View">
                                 <rect key="frame" x="16" y="28" width="177" height="128"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="177" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="o1j-UM-Q0C" customClass="OAStackView">
                                 <rect key="frame" x="16" y="28" width="177" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bzd-sw-5wS">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="1"/>
                                         <connections>
                                             <action selector="oneTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="hUL-9A-AF0"/>
@@ -35,7 +39,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-QC-zJx">
                                         <rect key="frame" x="25" y="-35" width="30" height="100"/>
-                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="2WH-8A-MhL"/>
                                         </constraints>
@@ -46,7 +50,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AwR-JP-fkI">
                                         <rect key="frame" x="78" y="0.0" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" priority="750" constant="100" id="tUx-0W-3lm"/>
                                         </constraints>
@@ -88,34 +92,34 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="chB-Kz-0HW">
                                         <rect key="frame" x="5" y="5" width="52" height="30"/>
                                         <state key="normal" title="Vertical">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="verticalTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="nWl-Yj-9rW"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-jW-Xxv">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1L-jW-Xxv">
                                         <rect key="frame" x="5" y="75" width="79" height="30"/>
                                         <state key="normal" title="Spacing (0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="qfR-3V-V9N"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-vM-yFC">
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xZr-vM-yFC">
                                         <rect key="frame" x="5" y="103" width="88" height="30"/>
                                         <state key="normal" title="Spacing (20)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="ItS-70-x37"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYN-pG-GXW">
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qYN-pG-GXW">
                                         <rect key="frame" x="5" y="132" width="88" height="30"/>
                                         <state key="normal" title="Spacing (30)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="JlB-v5-rGp"/>
@@ -124,7 +128,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Kc-ps-wXp">
                                         <rect key="frame" x="5" y="30" width="71" height="30"/>
                                         <state key="normal" title="Horizontal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="horizontalTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="7sz-VO-rsy"/>
@@ -133,7 +137,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdy-wF-Ywc">
                                         <rect key="frame" x="279" y="5" width="49" height="30"/>
                                         <state key="normal" title="HideAll">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="hideAll:" destination="whP-gf-Uak" eventType="touchUpInside" id="TT2-OB-d4r"/>
@@ -142,7 +146,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8fo-11-Eqc">
                                         <rect key="frame" x="270" y="30" width="59" height="30"/>
                                         <state key="normal" title="Show All">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="showAll:" destination="whP-gf-Uak" eventType="touchUpInside" id="oCr-47-h9Z"/>
@@ -151,7 +155,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gk1-f0-Hwd">
                                         <rect key="frame" x="235" y="75" width="93" height="30"/>
                                         <state key="normal" title="Alignment Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentFill:" destination="whP-gf-Uak" eventType="touchUpInside" id="0e5-iz-0Ye"/>
@@ -160,16 +164,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jil-rV-yuH">
                                         <rect key="frame" x="208" y="103" width="120" height="30"/>
                                         <state key="normal" title="Alignment Center">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentCenter:" destination="whP-gf-Uak" eventType="touchUpInside" id="8pK-fN-hCa"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-Y2-8qO">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lY0-Y2-8qO">
                                         <rect key="frame" x="201" y="132" width="124" height="30"/>
                                         <state key="normal" title="Alignment Trailing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentTrailing:" destination="whP-gf-Uak" eventType="touchUpInside" id="Kbv-1w-wPt"/>
@@ -178,7 +182,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o4D-1O-5qh">
                                         <rect key="frame" x="197" y="161" width="128" height="30"/>
                                         <state key="normal" title="Alignment Leading">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentLeading:" destination="whP-gf-Uak" eventType="touchUpInside" id="szJ-9j-Qki"/>
@@ -187,7 +191,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zo9-bw-cL5">
                                         <rect key="frame" x="5" y="185" width="103" height="30"/>
                                         <state key="normal" title="Distribution Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFill:" destination="whP-gf-Uak" eventType="touchUpInside" id="dWT-LW-byJ"/>
@@ -196,7 +200,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PUM-KZ-7bF">
                                         <rect key="frame" x="5" y="211" width="156" height="30"/>
                                         <state key="normal" title="Distribution Fill Equally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillEqually:" destination="whP-gf-Uak" eventType="touchUpInside" id="DFV-4t-WHn"/>
@@ -205,7 +209,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TMb-Kp-vFP">
                                         <rect key="frame" x="5" y="238" width="202" height="30"/>
                                         <state key="normal" title="Distribution Fill Proportionally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillProportionally:" destination="whP-gf-Uak" eventType="touchUpInside" id="Jfj-Cz-ame"/>
@@ -214,7 +218,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PgQ-qw-Ogl">
                                         <rect key="frame" x="5" y="265" width="181" height="30"/>
                                         <state key="normal" title="Distribution Equal Spacing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualSpacing:" destination="whP-gf-Uak" eventType="touchUpInside" id="gcf-In-c8U"/>
@@ -223,7 +227,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8mA-cj-Smi">
                                         <rect key="frame" x="5" y="292" width="193" height="30"/>
                                         <state key="normal" title="Distribution Equal Centering">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualCentering:" destination="whP-gf-Uak" eventType="touchUpInside" id="WKO-AX-4ab"/>
@@ -231,8 +235,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="47g-89-34P">
                                         <rect key="frame" x="-16" y="-173" width="79" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="No Margins">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="DuV-QU-yFb"/>
@@ -240,8 +245,9 @@
                                     </button>
                                     <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ut8-pm-Xgm">
                                         <rect key="frame" x="-16" y="-173" width="150" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Margins (10,20,30,40)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="j2w-o5-yjd"/>
@@ -249,15 +255,16 @@
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="h1s-to-MhG">
                                         <rect key="frame" x="-16" y="-173" width="129" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Margins (10,0,10,0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="G32-LY-9Bk"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="l1L-jW-Xxv" firstAttribute="leading" secondItem="xZr-vM-yFC" secondAttribute="leading" id="7wV-zg-7B2"/>
                                     <constraint firstItem="8mA-cj-Smi" firstAttribute="leading" secondItem="hOV-vh-kIh" secondAttribute="leading" constant="5" id="9SC-1m-FnA"/>
@@ -299,7 +306,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="aOB-5r-4uZ" firstAttribute="centerY" secondItem="o1j-UM-Q0C" secondAttribute="centerY" id="0M5-p6-GWa"/>
                             <constraint firstAttribute="trailingMargin" secondItem="hOV-vh-kIh" secondAttribute="trailing" id="7k8-7m-x17"/>
@@ -319,7 +326,6 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="OAStackView" id="vjC-Ac-QzN"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="stackView" destination="o1j-UM-Q0C" id="dXF-Wg-vXp"/>
                         <outlet property="view" destination="TpU-gO-2f1" id="sbs-ob-ZgE"/>
@@ -337,7 +343,7 @@
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="BJR-oc-hgB">
                         <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                     </tabBar>
                     <connections>
                         <segue destination="whP-gf-Uak" kind="relationship" relationship="viewControllers" id="yky-Ch-RCK"/>
@@ -363,45 +369,45 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-n0-9sM" userLabel="Background View">
                                 <rect key="frame" x="16" y="20" width="340" height="100"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Uvk-Af-qD6">
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Uvk-Af-qD6">
                                 <rect key="frame" x="18" y="135" width="345" height="350"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rPc-hJ-aXN">
                                         <rect key="frame" x="5" y="5" width="52" height="30"/>
                                         <state key="normal" title="Vertical">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="verticalTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="hQm-eg-XFt"/>
                                             <action selector="verticalTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="rDC-Bm-nBk"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxR-R8-2Jn">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hxR-R8-2Jn">
                                         <rect key="frame" x="5" y="75" width="79" height="30"/>
                                         <state key="normal" title="Spacing (0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="1hM-m3-UGt"/>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="hnW-FU-uJQ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6B-ls-05f">
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B6B-ls-05f">
                                         <rect key="frame" x="5" y="103" width="88" height="30"/>
                                         <state key="normal" title="Spacing (20)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="XjW-Os-Y1B"/>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="jdX-yI-1j7"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-ky-DhN">
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pU1-ky-DhN">
                                         <rect key="frame" x="5" y="132" width="88" height="30"/>
                                         <state key="normal" title="Spacing (30)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="V12-AX-OON"/>
@@ -411,67 +417,67 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FYT-W0-7ir">
                                         <rect key="frame" x="5" y="30" width="71" height="30"/>
                                         <state key="normal" title="Horizontal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="horizontalTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="Bn0-lp-mhy"/>
                                             <action selector="horizontalTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="jNe-S6-nXF"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnP-gl-Kun">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cnP-gl-Kun">
                                         <rect key="frame" x="281" y="5" width="49" height="30"/>
                                         <state key="normal" title="HideAll">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="hideAll:" destination="td4-fZ-D08" eventType="touchUpInside" id="QcL-JH-in0"/>
                                             <action selector="hideAll:" destination="whP-gf-Uak" eventType="touchUpInside" id="S4l-Wh-zoD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzt-L3-Yx7">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uzt-L3-Yx7">
                                         <rect key="frame" x="272" y="30" width="59" height="30"/>
                                         <state key="normal" title="Show All">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="showAll:" destination="whP-gf-Uak" eventType="touchUpInside" id="Zz2-vF-KTf"/>
                                             <action selector="showAll:" destination="td4-fZ-D08" eventType="touchUpInside" id="hbG-w6-vml"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwD-3q-Ruw">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qwD-3q-Ruw">
                                         <rect key="frame" x="237" y="75" width="93" height="30"/>
                                         <state key="normal" title="Alignment Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentFill:" destination="td4-fZ-D08" eventType="touchUpInside" id="xyz-Fa-k3Q"/>
                                             <action selector="alignmentFill:" destination="whP-gf-Uak" eventType="touchUpInside" id="ziC-qk-PwE"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiG-4v-CRp">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HiG-4v-CRp">
                                         <rect key="frame" x="210" y="103" width="120" height="30"/>
                                         <state key="normal" title="Alignment Center">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentCenter:" destination="td4-fZ-D08" eventType="touchUpInside" id="3ZD-y8-Ksj"/>
                                             <action selector="alignmentCenter:" destination="whP-gf-Uak" eventType="touchUpInside" id="Q8H-bu-Ad5"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-9Z-vdo">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YVd-9Z-vdo">
                                         <rect key="frame" x="203" y="132" width="124" height="30"/>
                                         <state key="normal" title="Alignment Trailing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentTrailing:" destination="whP-gf-Uak" eventType="touchUpInside" id="48e-Kk-llj"/>
                                             <action selector="alignmentTrailing:" destination="td4-fZ-D08" eventType="touchUpInside" id="hsO-Li-hm9"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRm-rw-gHv">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mRm-rw-gHv">
                                         <rect key="frame" x="199" y="161" width="128" height="30"/>
                                         <state key="normal" title="Alignment Leading">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentLeading:" destination="whP-gf-Uak" eventType="touchUpInside" id="6tk-Hc-iJP"/>
@@ -481,7 +487,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0hL-uZ-1Gb">
                                         <rect key="frame" x="5" y="185" width="103" height="30"/>
                                         <state key="normal" title="Distribution Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFill:" destination="whP-gf-Uak" eventType="touchUpInside" id="GBS-JR-phs"/>
@@ -491,7 +497,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4B0-V8-WZp">
                                         <rect key="frame" x="5" y="211" width="156" height="30"/>
                                         <state key="normal" title="Distribution Fill Equally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillEqually:" destination="whP-gf-Uak" eventType="touchUpInside" id="adA-vh-KCM"/>
@@ -501,7 +507,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lih-SC-IuS">
                                         <rect key="frame" x="5" y="238" width="202" height="30"/>
                                         <state key="normal" title="Distribution Fill Proportionally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillProportionally:" destination="td4-fZ-D08" eventType="touchUpInside" id="aZV-vs-gUX"/>
@@ -511,7 +517,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aR7-e6-9Uo">
                                         <rect key="frame" x="5" y="265" width="181" height="30"/>
                                         <state key="normal" title="Distribution Equal Spacing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualSpacing:" destination="td4-fZ-D08" eventType="touchUpInside" id="Td5-Oa-Rap"/>
@@ -521,37 +527,37 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlk-Fc-AiS">
                                         <rect key="frame" x="5" y="292" width="193" height="30"/>
                                         <state key="normal" title="Distribution Equal Centering">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualCentering:" destination="whP-gf-Uak" eventType="touchUpInside" id="U2g-s9-dRK"/>
                                             <action selector="distributionEqualCentering:" destination="td4-fZ-D08" eventType="touchUpInside" id="Wht-cJ-COP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-VS-C3E">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mBB-VS-C3E">
                                         <rect key="frame" x="251" y="238" width="79" height="30"/>
                                         <state key="normal" title="No Margins">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="68K-2s-O6Y"/>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="w4R-Wg-xEf"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="100" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcO-kq-heS">
+                                    <button opaque="NO" tag="100" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gcO-kq-heS">
                                         <rect key="frame" x="197" y="185" width="133" height="30"/>
                                         <state key="normal" title="Margins (10,0,10,0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="td4-fZ-D08" eventType="touchUpInside" id="haG-yd-XVJ"/>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="p38-r1-cIP"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="200" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm9-3C-11a">
+                                    <button opaque="NO" tag="200" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dm9-3C-11a">
                                         <rect key="frame" x="181" y="211" width="150" height="30"/>
                                         <state key="normal" title="Margins (10,20,30,40)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="4E5-cM-aES"/>
@@ -559,7 +565,7 @@
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="rPc-hJ-aXN" firstAttribute="top" secondItem="Uvk-Af-qD6" secondAttribute="top" constant="5" id="2uF-Th-aj0"/>
                                     <constraint firstItem="rPc-hJ-aXN" firstAttribute="leading" secondItem="Uvk-Af-qD6" secondAttribute="leading" constant="5" id="4s8-mL-ul5"/>
@@ -613,7 +619,7 @@
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FNO-Zb-OTn">
                                         <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="1"/>
                                         <connections>
                                             <action selector="oneTapped:" destination="whP-gf-Uak" eventType="touchUpInside" id="Qz0-dS-fmc"/>
@@ -622,7 +628,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H3f-Ae-HxF">
                                         <rect key="frame" x="120" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="yRw-7j-9vo"/>
                                         </constraints>
@@ -634,7 +640,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hnf-EG-H1v">
                                         <rect key="frame" x="240" y="0.0" width="100" height="100"/>
-                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" priority="750" constant="100" id="5S1-ze-Zwc"/>
                                         </constraints>
@@ -653,7 +659,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="Uvk-Af-qD6" secondAttribute="trailing" constant="-4" id="Cxx-dT-FaP"/>
                             <constraint firstItem="wkB-C7-q9w" firstAttribute="top" secondItem="WNg-pn-Lrr" secondAttribute="bottom" id="D0V-et-1ds"/>
@@ -666,7 +672,6 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="UIStackView" id="Gfq-fl-RgG"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="stackView" destination="wkB-C7-q9w" id="b2h-BN-rul"/>
                         <outlet property="view" destination="oUC-Ee-hJf" id="bvY-B9-qe8"/>
@@ -691,14 +696,14 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iAw-hx-kCp" userLabel="Background View">
                                 <rect key="frame" x="16" y="28" width="177" height="128"/>
-                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="0.94901960780000005" green="0.90588235289999997" blue="0.039215686270000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view clipsSubviews="YES" contentMode="scaleToFill" placeholderIntrinsicWidth="177" placeholderIntrinsicHeight="128" translatesAutoresizingMaskIntoConstraints="NO" id="9dQ-sF-fmZ" customClass="OAStackViewProxy">
                                 <rect key="frame" x="16" y="28" width="177" height="128"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BLg-6O-j6Y">
                                         <rect key="frame" x="0.0" y="0.0" width="30" height="30"/>
-                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="1" green="0.17100000000000001" blue="0.219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <state key="normal" title="1"/>
                                         <connections>
                                             <action selector="oneTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Bur-S2-Uji"/>
@@ -706,7 +711,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5QQ-PZ-6RI">
                                         <rect key="frame" x="25" y="-35" width="30" height="100"/>
-                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.17331946070000001" green="0.16586628910000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="StY-jn-sIW"/>
                                         </constraints>
@@ -717,7 +722,7 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="252" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WDs-4S-0Y6">
                                         <rect key="frame" x="78" y="0.0" width="100" height="30"/>
-                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <color key="backgroundColor" red="0.19081517270000001" green="0.59339021380000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" priority="750" constant="100" id="Uaf-VJ-fgY"/>
                                         </constraints>
@@ -759,34 +764,34 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q3A-am-SfQ">
                                         <rect key="frame" x="5" y="5" width="52" height="30"/>
                                         <state key="normal" title="Vertical">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="verticalTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="79C-Rd-tnw"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6F-9l-je8">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n6F-9l-je8">
                                         <rect key="frame" x="5" y="75" width="79" height="30"/>
                                         <state key="normal" title="Spacing (0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="MZ1-x6-yZH"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="20" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-XH-XhX">
+                                    <button opaque="NO" tag="20" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZDQ-XH-XhX">
                                         <rect key="frame" x="5" y="103" width="88" height="30"/>
                                         <state key="normal" title="Spacing (20)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Syv-UT-dUD"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" tag="30" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-yt-P51">
+                                    <button opaque="NO" tag="30" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WQp-yt-P51">
                                         <rect key="frame" x="5" y="132" width="88" height="30"/>
                                         <state key="normal" title="Spacing (30)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="spacingTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Jo8-iy-cl1"/>
@@ -795,7 +800,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0v2-6H-fNI">
                                         <rect key="frame" x="5" y="30" width="71" height="30"/>
                                         <state key="normal" title="Horizontal">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="horizontalTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="wrr-SC-hhh"/>
@@ -804,7 +809,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9xY-Ax-EqR">
                                         <rect key="frame" x="279" y="5" width="49" height="30"/>
                                         <state key="normal" title="HideAll">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="hideAll:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Lfc-Ql-iad"/>
@@ -813,7 +818,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OzJ-Ie-m4Y">
                                         <rect key="frame" x="270" y="30" width="59" height="30"/>
                                         <state key="normal" title="Show All">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="showAll:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="CiH-9s-noy"/>
@@ -822,7 +827,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zp-WR-hCX">
                                         <rect key="frame" x="235" y="75" width="93" height="30"/>
                                         <state key="normal" title="Alignment Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentFill:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="SLr-gH-DB3"/>
@@ -831,16 +836,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P2H-dG-U0o">
                                         <rect key="frame" x="208" y="103" width="120" height="30"/>
                                         <state key="normal" title="Alignment Center">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentCenter:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="bsX-NT-KBZ"/>
                                         </connections>
                                     </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvJ-6T-hl1">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FvJ-6T-hl1">
                                         <rect key="frame" x="201" y="132" width="124" height="30"/>
                                         <state key="normal" title="Alignment Trailing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentTrailing:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="T1X-Zt-M6D"/>
@@ -849,7 +854,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yhw-lP-3ep">
                                         <rect key="frame" x="197" y="161" width="128" height="30"/>
                                         <state key="normal" title="Alignment Leading">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="alignmentLeading:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="3DZ-xb-QSg"/>
@@ -858,7 +863,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SMM-aL-yOD">
                                         <rect key="frame" x="5" y="185" width="103" height="30"/>
                                         <state key="normal" title="Distribution Fill">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFill:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="a8b-2i-QoL"/>
@@ -867,7 +872,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZYi-Ao-Z0n">
                                         <rect key="frame" x="5" y="211" width="156" height="30"/>
                                         <state key="normal" title="Distribution Fill Equally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillEqually:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Hsk-mt-x0c"/>
@@ -876,7 +881,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9hk-lw-wO4">
                                         <rect key="frame" x="5" y="238" width="202" height="30"/>
                                         <state key="normal" title="Distribution Fill Proportionally">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionFillProportionally:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="baM-Wi-rB2"/>
@@ -885,7 +890,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="B03-Tm-nEg">
                                         <rect key="frame" x="5" y="265" width="181" height="30"/>
                                         <state key="normal" title="Distribution Equal Spacing">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualSpacing:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="tzQ-65-NpU"/>
@@ -894,7 +899,7 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NVn-yw-WVI">
                                         <rect key="frame" x="5" y="292" width="193" height="30"/>
                                         <state key="normal" title="Distribution Equal Centering">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="distributionEqualCentering:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="rhM-3c-RQ8"/>
@@ -902,8 +907,9 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="TeI-AT-L68">
                                         <rect key="frame" x="-16" y="-173" width="79" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="No Margins">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="7Wp-tz-cTO"/>
@@ -911,8 +917,9 @@
                                     </button>
                                     <button opaque="NO" tag="200" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ag-Ch-SeS">
                                         <rect key="frame" x="-16" y="-173" width="150" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Margins (10,20,30,40)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="Cih-pk-CRF"/>
@@ -920,15 +927,16 @@
                                     </button>
                                     <button opaque="NO" tag="100" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rJq-f1-1uz">
                                         <rect key="frame" x="-16" y="-173" width="129" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Margins (10,0,10,0)">
-                                            <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                            <color key="titleShadowColor" red="0.5" green="0.5" blue="0.5" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="marginsTapped:" destination="FBW-4T-Cf9" eventType="touchUpInside" id="JVZ-ip-sRB"/>
                                         </connections>
                                     </button>
                                 </subviews>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="n6F-9l-je8" firstAttribute="leading" secondItem="ZDQ-XH-XhX" secondAttribute="leading" id="2bP-QI-uHM"/>
                                     <constraint firstItem="9xY-Ax-EqR" firstAttribute="top" secondItem="0tY-U9-f1H" secondAttribute="top" constant="5" id="38h-Wm-yao"/>
@@ -970,7 +978,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstAttribute="trailingMargin" secondItem="0tY-U9-f1H" secondAttribute="trailing" id="48O-Xr-698"/>
                             <constraint firstItem="9dQ-sF-fmZ" firstAttribute="leading" secondItem="0pc-xE-T0Q" secondAttribute="leadingMargin" id="Ik0-5v-GYI"/>
@@ -990,7 +998,6 @@
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="OAStackViewProxy" id="W1s-hX-6sc" userLabel="OAStackViewProxy"/>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="stackView" destination="9dQ-sF-fmZ" id="Nss-sV-hDB"/>
                         <outlet property="view" destination="0pc-xE-T0Q" id="Php-CE-fJj"/>

@@ -8,15 +8,20 @@ DEPENDENCIES:
   - OAStackView (from `../`)
   - Reveal-iOS-SDK (~> 1.6.2)
 
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Kiwi
+    - Reveal-iOS-SDK
+
 EXTERNAL SOURCES:
   OAStackView:
-    :path: ../
+    :path: "../"
 
 SPEC CHECKSUMS:
   Kiwi: f49c9d54b28917df5928fe44968a39ed198cb8a8
-  OAStackView: 752a0324a97b7e7defe5dd4fc435a906fe643522
+  OAStackView: f8b3d65293bfc3150a8dfd28684836d3fe18c13a
   Reveal-iOS-SDK: e2250b3c155bcfac53ae223ddc1f76d08f206c33
 
-PODFILE CHECKSUM: a62bace25805ef248de941b6009169961f3b912e
+PODFILE CHECKSUM: 17087fa9435cebeaa78df64329ba6316939e0e5e
 
-COCOAPODS: 1.1.1
+COCOAPODS: 1.5.0
