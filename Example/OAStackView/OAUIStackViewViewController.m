@@ -23,7 +23,11 @@
           NSStringFromClass([self class]),
           NSStringFromClass([self.stackView class]),
           NSStringFromClass([self.stackView superclass]));
-
+    if (@available(iOS 11.0, *)) {
+        [self.stackView setCustomSpacing:60 afterView:self.viewToRemove];
+    } else {
+        // Fallback on earlier versions
+    }
 }
 
 - (void)didReceiveMemoryWarning

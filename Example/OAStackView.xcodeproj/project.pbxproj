@@ -28,7 +28,6 @@
 		A7CC22B51B2E0BC7009C9911 /* Launch Screen.xib in Resources */ = {isa = PBXBuildFile; fileRef = A7CC22B41B2E0BC7009C9911 /* Launch Screen.xib */; };
 		D21E827A1BCF97D400D8379B /* OAUIStackViewViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D21E82791BCF97D400D8379B /* OAUIStackViewViewController.m */; };
 		E70CA88C2124389200DD82FD /* OAStackView+CustomSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = E70CA88B2124389200DD82FD /* OAStackView+CustomSpace.m */; };
-		E70CA88F212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = E70CA88E212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.m */; };
 		E71CDC0CCF5EBB7F9D8090AE /* libPods-OAStackView_Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A034F8EDA2F096ABF11855AA /* libPods-OAStackView_Example.a */; };
 /* End PBXBuildFile section */
 
@@ -81,8 +80,6 @@
 		D21E82791BCF97D400D8379B /* OAUIStackViewViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAUIStackViewViewController.m; sourceTree = "<group>"; };
 		E70CA88A2124389200DD82FD /* OAStackView+CustomSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAStackView+CustomSpace.h"; sourceTree = "<group>"; };
 		E70CA88B2124389200DD82FD /* OAStackView+CustomSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OAStackView+CustomSpace.m"; sourceTree = "<group>"; };
-		E70CA88D212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "OAStackViewDistributionStrategy+CustomSpace.h"; sourceTree = "<group>"; };
-		E70CA88E212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "OAStackViewDistributionStrategy+CustomSpace.m"; sourceTree = "<group>"; };
 		E84D2DC1C0119AB0E1D43BF1 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -226,8 +223,6 @@
 			children = (
 				E70CA88A2124389200DD82FD /* OAStackView+CustomSpace.h */,
 				E70CA88B2124389200DD82FD /* OAStackView+CustomSpace.m */,
-				E70CA88D212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.h */,
-				E70CA88E212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.m */,
 			);
 			name = CustomSpace;
 			sourceTree = "<group>";
@@ -378,7 +373,6 @@
 				6003F5A7195388D20070C39A /* OAStackViewViewController.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 				E70CA88C2124389200DD82FD /* OAStackView+CustomSpace.m in Sources */,
-				E70CA88F212439A200DD82FD /* OAStackViewDistributionStrategy+CustomSpace.m in Sources */,
 				535F82681B7681E200841D0D /* TestHelpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -504,6 +498,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OAStackView/OAStackView-Prefix.pch";
 				INFOPLIST_FILE = "OAStackView/OAStackView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -520,6 +515,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "OAStackView/OAStackView-Prefix.pch";
 				INFOPLIST_FILE = "OAStackView/OAStackView-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

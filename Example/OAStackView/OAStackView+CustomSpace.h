@@ -9,8 +9,5 @@
 #import "OAStackView.h"
 
 @interface OAStackView (CustomSpace)
-
-@property (nonatomic, readonly) NSMapTable *customSpaces;
-
 - (void)setCustomSpacing:(CGFloat)spacing afterView:(UIView *)arrangedSubview;
 @end

@@ -7,7 +7,12 @@
 //
 
 #import "OAStackView+CustomSpace.h"
-#import <objc/runtime.h>
+#import "OAStackViewDistributionStrategy.h"
+#import <objc/message.h>
+
+@interface OAStackView ()
+@property (nonatomic, readonly) NSMapTable *customSpaces;
+@end
 
 @implementation OAStackView (CustomSpace)
 static char kAssociatedObjectKey_CustomSpaces;
@@ -18,14 +23,14 @@ static char kAssociatedObjectKey_CustomSpaces;
 - (NSMapTable *)customSpaces {
     NSMapTable *customSpaces = objc_getAssociatedObject(self, &kAssociatedObjectKey_CustomSpaces);
     if (customSpaces == nil) {
-        [self setCustomSpaces:[NSMapTable weakToStrongObjectsMapTable]];
+        [self setCustomSpaces:[NSMapTable strongToWeakObjectsMapTable]];
     }
     return customSpaces;
 }
 
 - (void)setCustomSpacing:(CGFloat)spacing afterView:(UIView *)arrangedSubview
 {
-    [self.customSpaces setObject:arrangedSubview forKey:@(spacing)];
+    [self.customSpaces setObject:@(spacing) forKey:arrangedSubview];
     
     for (NSLayoutConstraint *constraint in self.constraints) {
         BOOL isWidthOrHeight =
@@ -41,5 +46,35 @@ static char kAssociatedObjectKey_CustomSpaces;
             }
         }
     }
+}
+@end
+
+@interface OAStackViewDistributionStrategy ()
+/// 这些都是原类的，这里只是重新申明
+/// 调用还会是原类里面的
+@property (nonatomic, strong) OAStackView *stackView;
+@property (nonatomic, strong) NSMutableArray *constraints;
+- (NSString *)currentAxisString;
+- (NSString *)symbolicSpacingRelation;
+@end
+
+@implementation OAStackViewDistributionStrategy (CustomSpace)
+- (void)alignMiddleView:(UIView*)view afterView:(UIView*)previousView {
+    CGFloat spacing = self.stackView.spacing;
+    CGFloat customSpace = [[self.stackView.customSpaces objectForKey:previousView] floatValue];
+    if (customSpace > 0) {
+        spacing = customSpace;
+    }
+    NSString *str = [NSString stringWithFormat:@"%@:[previousView]-(%@%f)-[view]",
+                     [self currentAxisString],
+                     [self symbolicSpacingRelation],
+                     spacing];
+    
+    NSArray *arr = [NSLayoutConstraint constraintsWithVisualFormat:str
+                                                           options:0
+                                                           metrics:nil
+                                                             views:NSDictionaryOfVariableBindings(view, previousView)];
+    [self.constraints addObjectsFromArray:arr];
+    [self.stackView addConstraints:arr];
 }
 @end

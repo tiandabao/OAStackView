@@ -34,7 +34,6 @@
 - (void)viewDidAppear:(BOOL)animated
 {
   [super viewDidAppear:animated];
-  [self.stackView setCustomSpacing:50 afterView:self.viewToRemove];
 }
 
 - (void)didReceiveMemoryWarning
