@@ -9,7 +9,7 @@ DEPENDENCIES:
   - Reveal-iOS-SDK (~> 1.6.2)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Kiwi
     - Reveal-iOS-SDK
 
@@ -24,4 +24,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: 17087fa9435cebeaa78df64329ba6316939e0e5e
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.5.0
